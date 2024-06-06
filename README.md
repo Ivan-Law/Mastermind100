@@ -3,10 +3,19 @@ Mastermind 100 is a challenging code breaking game with GUI is deployed to the p
 
 A player tries to guess the color ball pattern by placing different combinations of four color balls out of six color balls. Feedback from the system regarding how many of the color balls are in the correct color and position (black ball) or correct color but incorrect position (white ball). A player wins by guessing the pattern within 8 rows of guesses.
 
-Online version can be played without installation:
+## Game Rules: 
+1) Choose 4 color balls (can be repeated).
+2) You will get feedback of: 
+   black ball (correct color and position) or 
+   white ball (correct color but incorrect position).
+3) You will have 8 chances to guess.
+
+## Online version:
+This game can be played without Python or Streamlit installation via laptop, iPad or any mobile phone:
 https://mastermind100.streamlit.app
 
-After deployment, the game can be launched in any web browsers. The mobile view is shown below.
+The mobile view is shown below.
+
+<img src="https://github.com/Ivan-Law/Mastermind100/assets/47113978/a52567e0-a475-489a-85c2-401bc45978f0" width="300" />
 
 
-<img src="https://github.com/Ivan-Law/Mastermind100/assets/47113978/c4c428a0-5348-4713-9399-0e2f7a19ee9b" width="300" />
