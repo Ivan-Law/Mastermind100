@@ -169,6 +169,7 @@ def game():
     with st.container(height=200):
          st.text(st.session_state['allResult'])
     st.write("Chosen color:", st.session_state['color'])
+    st.write("Remaining guess:", 8 - st.session_state.guess)
     # st.write("My number:", st.session_state['number'])
     # st.write("Sum:", st.session_state.sum)
     # st.write("myRes", myRes)
