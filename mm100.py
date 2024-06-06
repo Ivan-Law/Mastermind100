@@ -210,7 +210,7 @@ def game():
                 if st.session_state.guess % 8 != 0:
                     st.button("Let's continue to guess!🤔", on_click=disable, args=(False,))
 
-            if st.session_state.guess % 8 == 0 and st.session_state.guess != 0:
+            if st.session_state.guess % 8 == 0 and st.session_state.guess != 0 and black != 4:
                 st.write(r"$\textsf{\Huge You Lose!😮‍💨}$")
                 st.write("The balls should be:")
                 st.write("ResultBalls", ResBalls(myRes))
