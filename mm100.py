@@ -72,7 +72,7 @@ def myGuess(guessNum, resNum):
 def game():
 
     st.write(r"$\textsf{\Huge Mastermind💯}$")
-    st.write(""" ## 🔴🟠🟡🟢🔵🟣⚫⚪""")
+    st.write(""" #### 🔴🟠🟡🟢🔵🟣By Ivan Law""")
     st.write("Click to choose 4 color balls (can be repeated).  \nYou have 8 chances to guess. Good Luck!")
 
     if "allResult" not in st.session_state:
