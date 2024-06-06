@@ -73,7 +73,11 @@ def game():
 
     st.write(r"$\textsf{\Huge Mastermind💯}$")
     st.write(""" #### 🔴🟠🟡🟢🔵🟣By Ivan Law""")
-    st.write("Click to choose 4 color balls (can be repeated).  \nYou have 8 chances to guess. Good Luck!")
+    st.caption("(Rule 1) Choose 4 color balls (can be repeated).  \n"
+               "(Rule 2) You will get feedback of black ball"
+               " (correct color and position) or white ball"
+               " (correct color but incorrect position).  \n"
+               "(Rule 3) You will have 8 chances to guess. Good Luck!")
 
     if "allResult" not in st.session_state:
         st.session_state['allResult'] = 'Your guess        Checking\n'
