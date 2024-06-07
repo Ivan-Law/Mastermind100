@@ -5,11 +5,14 @@
 # guessing the pattern within 8 rows of guesses.
 #
 # Created by Ivan Law (ivan.law@gmail.com)
-# Date: June 6th, 2024
+# Last Update: June 7th, 2024
 # Version: 1.0
 
 import random
 import streamlit as st
+import streamlit_theme as stt
+
+stt.set_theme({'primary': '#0E1117'})
 @st.cache_data
 def genNum():
     a1 = random.randint(1, 6)
@@ -70,14 +73,23 @@ def myGuess(guessNum, resNum):
     return black, white
 
 def game():
+    st.markdown("""
+            <style>
+                   .block-container {
+                        padding-top: 3rem;
+                        padding-bottom: 0rem;
+                        padding-left: 1rem;
+                        padding-right: 0rem;
+                    }
+            </style>
+            """, unsafe_allow_html=True)
 
-    st.write(r"$\textsf{\Huge Mastermind💯}$")
-    st.write(""" #### 🔴🟠🟡🟢🔵🟣By Ivan Law""")
-    st.caption("(Rule 1) Choose 4 color balls (can be repeated).  \n"
-               "(Rule 2) You will get feedback of black ball"
-               " (correct color and position) or white ball"
-               " (correct color but incorrect position).  \n"
-               "(Rule 3) You will have 8 chances to guess. Good Luck!")
+    st.write(r"""$\textsf{\Huge Mastermind💯}$<br>🔴🟠🟡🟢🔵🟣 By Ivan Law""", unsafe_allow_html=True)
+    st.caption("""Rule 1: Choose 4 color balls (can be repeated).  \n"""
+               """Rule 2: You will get feedback of black ball"""
+               """ (correct color and position) or white ball"""
+               """ (correct color but incorrect position).  \n"""
+               """Rule 3: You have 8 chances to guess. Good Luck!""", unsafe_allow_html=True)
 
     if "allResult" not in st.session_state:
         st.session_state['allResult'] = 'Your guess        Checking\n'
@@ -93,6 +105,7 @@ def game():
         st.session_state.guess = 0
 
     myRes = genNum()
+
     def ResBalls(myRes):
         resultballs = ''
         for x in range(len(myRes)):
@@ -208,6 +221,7 @@ def game():
             if black == 4:
                 st.balloons()
                 st.write(r"$\textsf{\Huge You Win!💯🎉}$")
+                st.text(st.session_state['allResult'])
                 if st.button("Let's play again!😎👍", on_click=clear_cache):
                     game()
             else:
