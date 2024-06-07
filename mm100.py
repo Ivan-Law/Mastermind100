@@ -10,9 +10,7 @@
 
 import random
 import streamlit as st
-import streamlit_theme as stt
 
-stt.set_theme({'primary': '#0E1117'})
 @st.cache_data
 def genNum():
     a1 = random.randint(1, 6)
