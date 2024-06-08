@@ -73,13 +73,13 @@ def myGuess(guessNum, resNum):
 def game():
     st.markdown("""
             <style>
-                   .block-container {
+                .block-container {
                         padding-top: 3rem;
                         padding-bottom: 0rem;
                         padding-left: 1rem;
                         padding-right: 0rem;
                     }
-                    .stApp {
+                .stApp {
                         background-color: black;
                     }
             </style>
