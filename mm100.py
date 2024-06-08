@@ -5,11 +5,15 @@
 # guessing the pattern within 8 rows of guesses.
 #
 # Created by Ivan Law (ivan.law@gmail.com)
-# Last Update: June 7th, 2024
+# Last Update: June 9th, 2024
 # Version: 1.0
 
 import random
 import streamlit as st
+
+st.set_page_config(
+    page_title="Mastermind💯",
+)
 
 @st.cache_data
 def genNum():
