@@ -79,6 +79,9 @@ def game():
                         padding-left: 1rem;
                         padding-right: 0rem;
                     }
+                    .stApp {
+                        background-color: black;
+                    }
             </style>
             """, unsafe_allow_html=True)
 
