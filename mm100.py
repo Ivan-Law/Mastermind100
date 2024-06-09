@@ -88,6 +88,7 @@ def game():
                         background-color: black;
                     }
                 .stButton>button{
+                        background-color: #000000;
                         color: #000000;
                     }
             </style>
