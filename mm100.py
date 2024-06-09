@@ -87,6 +87,9 @@ def game():
                         color:#ffffff;
                         background-color: black;
                     }
+                .stButton>button{
+                        color: #000000;
+                    }
             </style>
             """, unsafe_allow_html=True)
 
