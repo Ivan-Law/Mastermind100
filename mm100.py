@@ -84,6 +84,7 @@ def game():
                         padding-right: 0rem;
                     }
                 .stApp {
+                        color:#ffffff;
                         background-color: black;
                     }
             </style>
