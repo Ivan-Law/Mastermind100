@@ -17,6 +17,5 @@ https://mastermind100.streamlit.app
 
 ## Mobile view:
 
-<img src="https://github.com/Ivan-Law/Mastermind100/assets/47113978/a52567e0-a475-489a-85c2-401bc45978f0" width="300" />
-
+<img src="https://github.com/Ivan-Law/Mastermind100/assets/47113978/0e7e25f1-4bff-46aa-b370-d34e425eb6c4" width="300" />
 
