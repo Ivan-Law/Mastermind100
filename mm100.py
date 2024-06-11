@@ -5,11 +5,11 @@
 # guessing the pattern within 8 rows of guesses.
 #
 # Created by Ivan Law (ivan.law@gmail.com)
-# Last Update: June 9th, 2024
+# Last Update: June 12th, 2024
 # Version: 1.0
 
-import random
 import streamlit as st
+import random
 
 st.set_page_config(
     page_title="Mastermind💯",
@@ -95,11 +95,24 @@ def game():
             """, unsafe_allow_html=True)
 
     st.write(r"""$\textsf{\Huge Mastermind💯}$<br>🔴🟠🟡🟢🔵🟣 By Ivan Law""", unsafe_allow_html=True)
-    st.caption("""Rule 1: Choose 4 color balls (can be repeated).  \n"""
-               """Rule 2: You will get feedback of black ball"""
-               """ (correct color and position) or white ball"""
-               """ (correct color but incorrect position).  \n"""
-               """Rule 3: You have 8 chances to guess. Good Luck!""", unsafe_allow_html=True)
+    with st.popover("Game Rules ⭐"):
+        st.markdown("#### Mastermind Rules:")
+        st.write("""
+        Guess the pattern of 4 color balls from 6 different
+        colors in both order and color.
+        Color ball can be repeated but is not empty.""")
+        st.write("""
+        Once confirmed, a feedback will be given.
+        Black ball is given if correct in both color and position.
+        White ball is given if a right color ball is chosen but
+        is incorrectly positioned.
+        """)
+    
+    #st.caption("""Rule 1: Choose 4 color balls (can be repeated).  \n"""
+    #           """Rule 2: You will get feedback of black ball"""
+    #           """ (correct color and position) or white ball"""
+    #           """ (correct color but incorrect position).  \n"""
+    #           """Rule 3: You have 8 chances to guess. Good Luck!""", unsafe_allow_html=True)
 
     if "allResult" not in st.session_state:
         st.session_state['allResult'] = 'Your guess        Checking\n'
