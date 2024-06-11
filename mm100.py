@@ -83,14 +83,6 @@ def game():
                         padding-left: 1rem;
                         padding-right: 0rem;
                     }
-                #.stApp {
-                #        color:#ffffff;
-                #        background-color: black;
-                #    }
-                #.stButton>button{
-                #        background-color: #000000;
-                #        color: #000000;
-                #    }
             </style>
             """, unsafe_allow_html=True)
 
