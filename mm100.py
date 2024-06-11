@@ -107,12 +107,6 @@ def game():
         White ball is given if a right color ball is chosen but
         is incorrectly positioned.
         """)
-    
-    #st.caption("""Rule 1: Choose 4 color balls (can be repeated).  \n"""
-    #           """Rule 2: You will get feedback of black ball"""
-    #           """ (correct color and position) or white ball"""
-    #           """ (correct color but incorrect position).  \n"""
-    #           """Rule 3: You have 8 chances to guess. Good Luck!""", unsafe_allow_html=True)
 
     if "allResult" not in st.session_state:
         st.session_state['allResult'] = 'Your guess        Checking\n'
