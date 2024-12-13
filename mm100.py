@@ -246,9 +246,9 @@ def game():
     else:
         st.write('''<style>
         [data-testid="column"] {
-            width: calc(33.3333% - 1rem) !important;
-            flex: 1 1 calc(33.3333% - 1rem) !important;
-            min-width: calc(33% - 1rem) !important;
+            width: calc(28% - 1rem) !important;
+            flex: 1 1 calc(28% - 1rem) !important;
+            min-width: calc(28% - 1rem) !important;
         }
         </style>''', unsafe_allow_html=True)
         col = st.columns(3)
